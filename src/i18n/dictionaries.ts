@@ -19,8 +19,7 @@ export const dictionaries = {
       ticker: ["Balde 11 Minis €9.50", "Rissóis 24h", "Matraquilhos", "Cedofeita", "Noite do Porto", "Desde Sempre", "Espaço 77"],
       cards: [
         { num: "01 — Carta", title: "O Menu do 77", desc: "Finos, imperiais, shots e o que a noite mandar. Carta atualizada.", link: "Ver carta →" },
-        { num: "02 — Agenda", title: "Noites & Eventos", desc: "DJ's, noites temáticas e aquelas sextas que nunca acabam.", link: "Ver agenda →" },
-        { num: "03 — Localização", title: "Onde Nos Encontrar", desc: "Travessa de Cedofeita. Sempre aberto quando o resto já fechou.", link: "Como chegar →" }
+        { num: "02 — Localização", title: "Onde Nos Encontrar", desc: "Travessa de Cedofeita. Sempre aberto quando o resto já fechou.", link: "Como chegar →" }
       ],
       quote: ["O Espaço 77 não é um bar. É ", "o ponto de partida da noite", " — e às vezes também o fim dela."],
       footer1: "© Espaço 77 · Porto · Todos os direitos reservados",
@@ -170,8 +169,7 @@ export const dictionaries = {
       ticker: ["Bucket of 11 Minis €9.50", "Rissóis 24/7", "Foosball", "Cedofeita", "Porto's Nightlife", "Since Always", "Espaço 77"],
       cards: [
         { num: "01 — Menu", title: "The 77 Menu", desc: "Finos, pints, shots, and whatever the night brings. Updated menu.", link: "View menu →" },
-        { num: "02 — Agenda", title: "Nights & Events", desc: "DJs, themed nights, and those Fridays that never end.", link: "View agenda →" },
-        { num: "03 — Location", title: "Where To Find Us", desc: "Travessa de Cedofeita. Always open when the rest are closed.", link: "How to get here →" }
+        { num: "02 — Location", title: "Where To Find Us", desc: "Travessa de Cedofeita. Always open when the rest are closed.", link: "How to get here →" }
       ],
       quote: ["Espaço 77 is not a bar. It's ", "where the night begins", " — and sometimes where it ends."],
       footer1: "© Espaço 77 · Porto · All rights reserved",
@@ -321,8 +319,7 @@ export const dictionaries = {
       ticker: ["Cubo 11 Minis €9.50", "Rissóis 24h", "Futbolín", "Cedofeita", "La noche de Oporto", "Desde Siempre", "Espaço 77"],
       cards: [
         { num: "01 — Carta", title: "El Menú del 77", desc: "Finos, jarras, chupitos y lo que la noche pida. Carta actualizada.", link: "Ver carta →" },
-        { num: "02 — Agenda", title: "Noches & Eventos", desc: "DJs, noches temáticas y esos viernes que nunca acaban.", link: "Ver agenda →" },
-        { num: "03 — Ubicación", title: "Dónde Encontrarnos", desc: "Travessa de Cedofeita. Siempre abierto cuando los demás han cerrado.", link: "Cómo llegar →" }
+        { num: "02 — Ubicación", title: "Dónde Encontrarnos", desc: "Travessa de Cedofeita. Siempre abierto cuando los demás han cerrado.", link: "Cómo llegar →" }
       ],
       quote: ["El Espaço 77 no es un bar. Es ", "donde empieza la noche", " — y a veces também donde termina."],
       footer1: "© Espaço 77 · Oporto · Todos los derechos reservados",

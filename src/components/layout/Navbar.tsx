@@ -53,17 +53,11 @@ export default function Navbar() {
                   </button>
                 ))}
               </div>
-              <Link href="/reservas" className="bg-[#dc2626] text-white px-5 py-2 hover:bg-white hover:text-[#0a0a0a] transition-all">
-                {dict.nav.book}
-              </Link>
             </div>
           </nav>
 
           {/* Mobile Actions */}
           <div className="flex items-center gap-4 md:hidden">
-            <Link href="/reservas" className="bg-[#dc2626] text-white px-4 py-1.5 font-bebas tracking-widest text-xs">
-              {dict.nav.book}
-            </Link>
             <button onClick={() => setIsMenuOpen(true)} className="text-[#f0e6cc] hover:text-[#dc2626]">
               <Menu size={28} />
             </button>
@@ -99,7 +93,6 @@ export default function Navbar() {
               <Link href="/menu" onClick={() => setIsMenuOpen(false)} className="hover:text-[#dc2626]">{dict.nav.menu}</Link>
               <Link href="/historia" onClick={() => setIsMenuOpen(false)} className="hover:text-[#dc2626]">{dict.nav.history}</Link>
               <Link href="/localizacao" onClick={() => setIsMenuOpen(false)} className="hover:text-[#dc2626]">{dict.nav.location}</Link>
-              <Link href="/reservas" onClick={() => setIsMenuOpen(false)} className="text-[#dc2626] mt-4">{dict.nav.book}</Link>
             </nav>
             <div className="mt-auto pt-10 border-t border-[#dc2626]/20">
               <p className="font-bebas text-lg tracking-widest text-[#dc2626]">ESPAÇO 77 · PORTO</p>

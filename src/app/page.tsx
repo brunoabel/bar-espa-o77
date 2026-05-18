@@ -61,9 +61,6 @@ export default function Home() {
               <Link href="/menu" className="group bg-[#dc2626] text-white px-10 py-4 font-bebas text-xl tracking-widest hover:bg-white hover:text-[#0a0a0a] transition-all flex items-center gap-3 shadow-2xl shadow-[#dc2626]/20">
                 {dict.home.btnMenu} <ArrowRight className="group-hover:translate-x-2 transition-transform" />
               </Link>
-              <Link href="/reservas" className="border border-white/20 px-10 py-4 font-bebas text-xl tracking-widest hover:bg-white hover:text-[#0a0a0a] hover:border-white transition-all">
-                {dict.home.btnBook.replace(' →', '')}
-              </Link>
             </div>
           </motion.div>
         </div>
@@ -80,8 +77,8 @@ export default function Home() {
 
       {/* FEATURED CARDS */}
       <section className="py-32 px-6 bg-[#0d0d0d]">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 sm:gap-20">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-20">
             {dict.home.cards.map((card, idx) => (
               <motion.div 
                 key={idx}
