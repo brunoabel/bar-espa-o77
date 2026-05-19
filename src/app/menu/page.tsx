@@ -179,13 +179,16 @@ export default function MenuPage() {
 
   return (
     <main style={{
-      maxWidth: "72rem",
-      margin: "0px auto",
-      padding: "3rem 1.5rem 6rem",
       minHeight: "100vh",
       backgroundColor: "rgb(10, 6, 4)",
+      width: "100%",
     }}>
-      {/* ── HEADER ── */}
+      <div style={{
+        maxWidth: "72rem",
+        margin: "0px auto",
+        padding: "3rem 1.5rem 6rem",
+      }}>
+        {/* ── HEADER ── */}
       <header style={{ marginBottom: "4rem" }}>
         <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "1rem" }}>
           <div style={{ width: "24px", height: "1px", backgroundColor: "rgb(191, 31, 26)" }}></div>
@@ -459,6 +462,7 @@ export default function MenuPage() {
           }
         }
       `}} />
+      </div>
     </main>
   );
 }
