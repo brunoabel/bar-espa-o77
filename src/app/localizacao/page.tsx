@@ -140,14 +140,27 @@ export default function OndeParamos() {
                 color: "rgb(240, 230, 204)",
                 lineHeight: 1.7
               }}>
-                {dict.location.val3a}<br />
+                <a 
+                  href="https://instagram.com/espaco.77" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  style={{
+                    color: "rgb(240, 230, 204)",
+                    textDecoration: "none",
+                    transition: "color 0.2s"
+                  }}
+                  onMouseEnter={(e) => e.currentTarget.style.color = "rgb(191, 31, 26)"}
+                  onMouseLeave={(e) => e.currentTarget.style.color = "rgb(240, 230, 204)"}
+                >
+                  @espaco.77
+                </a><br />
                 <span style={{
                   fontFamily: "var(--font-lora), 'Lora', serif",
                   fontStyle: "italic",
                   fontSize: "0.8rem",
                   color: "rgb(138, 114, 86)"
                 }}>
-                  {dict.location.val3b}
+                  Instagram
                 </span>
               </div>
             </div>
