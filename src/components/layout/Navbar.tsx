@@ -54,11 +54,12 @@ export default function Navbar() {
 
       {/* Navigation Links */}
       <nav
-        className="hidden md:flex"
+        className="nav-center"
         style={{
           position: "absolute",
           left: "50%",
           transform: "translateX(-50%)",
+          display: "flex",
           alignItems: "center",
           gap: "2rem",
         }}
@@ -132,7 +133,15 @@ export default function Navbar() {
       </nav>
 
       {/* Right placeholder to keep layout balanced */}
-      <div style={{ width: "45px" }} className="hidden md:block" />
+      <div style={{ width: "45px" }} className="nav-placeholder" />
+
+      {/* Embedded CSS for bulletproof responsiveness */}
+      <style dangerouslySetInnerHTML={{ __html: `
+        @media (max-width: 640px) {
+          .nav-center { display: none !important; }
+          .nav-placeholder { display: none !important; }
+        }
+      `}} />
     </header>
   );
 }

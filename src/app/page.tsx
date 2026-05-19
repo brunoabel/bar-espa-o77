@@ -135,7 +135,7 @@ export default function Home() {
         </div>
       </section>
 
-      <style jsx global>{`
+      <style dangerouslySetInnerHTML={{ __html: `
         @keyframes ticker {
           0% {
             transform: translateX(0);
@@ -144,7 +144,7 @@ export default function Home() {
             transform: translateX(-50%);
           }
         }
-      `}</style>
+      `}} />
     </main>
   );
 }

@@ -33,7 +33,7 @@ export default function BottomNav() {
         boxSizing: "border-box",
         padding: "0 0.5rem",
       }}
-      className="md:hidden"
+      className="bottom-nav"
     >
       {navItems.map((item) => {
         const isActive = pathname === item.href;
@@ -74,6 +74,13 @@ export default function BottomNav() {
           </Link>
         );
       })}
+
+      {/* Embedded CSS for bulletproof responsiveness */}
+      <style dangerouslySetInnerHTML={{ __html: `
+        @media (min-width: 641px) {
+          .bottom-nav { display: none !important; }
+        }
+      `}} />
     </nav>
   );
 }
