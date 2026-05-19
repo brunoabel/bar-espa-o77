@@ -32,7 +32,7 @@ const C = {
 
 const fade = {
   hidden:  { opacity: 0, y: 14 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.35, ease: "easeOut" } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.35, ease: "easeOut" as const } },
 };
 const stagger = {
   hidden:  {},
