@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { motion, AnimatePresence } from "framer-motion";
 
 interface MenuItem {
   name: string;
@@ -256,14 +255,10 @@ export default function MenuPage() {
       </nav>
 
       {/* ── CATEGORY LISTS WITH TRANSITION ── */}
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={tab}
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -10 }}
-          transition={{ duration: 0.2 }}
-        >
+      <div
+        key={tab}
+        className="animate-in"
+      >
           {current.map((cat) => (
             <section key={cat.id} style={{ marginBottom: "3.5rem" }}>
               <h2 style={{
@@ -432,8 +427,7 @@ export default function MenuPage() {
               </div>
             </section>
           ))}
-        </motion.div>
-      </AnimatePresence>
+      </div>
 
       {/* ── FOOTER ── */}
       <footer style={{
@@ -448,6 +442,23 @@ export default function MenuPage() {
         <p>{dict.menu.note}</p>
         <p style={{ marginTop: "0.5rem" }}>Porto · Travessa de Cedofeita</p>
       </footer>
+
+      {/* ── CSS KEYFRAMES ANIMATION ── */}
+      <style dangerouslySetInnerHTML={{ __html: `
+        .animate-in {
+          animation: fadeIn 0.6s ease-out;
+        }
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(10px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      `}} />
     </main>
   );
 }
