@@ -566,13 +566,73 @@ export const dictionaries = {
             title: "SHOTS",
             items: [
               {
-                name: "Shots Premium (Dragon Ball, B-52, Orgasmo, Jagermaister, TGV, Tequila...)",
+                name: "Beirão",
+                price: "2,00€"
+              },
+              {
+                name: "CRF (Aguardente)",
+                price: "2,00€"
+              },
+              {
+                name: "Tequila (com limão e sal)",
+                price: "2,00€"
+              },
+              {
+                name: "Vodka",
+                price: "2,00€"
+              },
+              {
+                name: "Whisky",
+                price: "2,00€"
+              },
+              {
+                name: "B-52 (Licor de café, Irish Cream e absinto)",
                 price: "2,50€",
                 isPopular: true
               },
               {
-                name: "Shots (Kalashnikov, CRF, Beirão, Tequila Jameson)",
-                price: "2,00€"
+                name: "Biko (Bailey's e licor de café)",
+                price: "2,50€"
+              },
+              {
+                name: "Bip Bip (Tequila, laranja e canela)",
+                price: "2,50€"
+              },
+              {
+                name: "Dragon Ball (Elaborado)",
+                price: "2,50€"
+              },
+              {
+                name: "Kalashnikov (Vodka, absinto e limão)",
+                price: "2,50€"
+              },
+              {
+                name: "Moranguinho (Batida de coco, groselha e canela)",
+                price: "2,50€"
+              },
+              {
+                name: "Orgasmo (Batida de coco, natas e groselha)",
+                price: "2,50€"
+              },
+              {
+                name: "Pastel de Nata (Licor de café, licor de ovo e canela)",
+                price: "2,50€"
+              },
+              {
+                name: "Quiet (Vodka preta e absinto)",
+                price: "2,50€"
+              },
+              {
+                name: "Ratatouille (Whisky e Tia Maria)",
+                price: "2,50€"
+              },
+              {
+                name: "TGV (Tequila, Vodka, Gin)",
+                price: "2,50€"
+              },
+              {
+                name: "Toda Lá (Absinto e canela)",
+                price: "2,50€"
               },
               {
                 name: "Bagaço",
@@ -1237,20 +1297,80 @@ export const dictionaries = {
             title: "SHOTS",
             items: [
               {
-                name: "Shots Premium (Dragon Ball, B-52, Orgasmo, Jagermaister, TGV, Tequila...)",
+                name: "Beirão",
+                price: "2,00€"
+              },
+              {
+                name: "CRF (Brandy)",
+                price: "2,00€"
+              },
+              {
+                name: "Tequila (with lemon and salt)",
+                price: "2,00€"
+              },
+              {
+                name: "Vodka",
+                price: "2,00€"
+              },
+              {
+                name: "Whisky",
+                price: "2,00€"
+              },
+              {
+                name: "B-52 (Coffee liqueur, Irish Cream and absinthe)",
                 price: "2,50€",
                 isPopular: true
               },
               {
-                name: "Shots (Kalashnikov, CRF, Beirão, Tequila Jameson)",
-                price: "2,00€"
+                name: "Biko (Bailey's and coffee liqueur)",
+                price: "2,50€"
+              },
+              {
+                name: "Bip Bip (Tequila, orange and cinnamon)",
+                price: "2,50€"
+              },
+              {
+                name: "Dragon Ball (Crafted)",
+                price: "2,50€"
+              },
+              {
+                name: "Kalashnikov (Vodka, absinthe and lemon)",
+                price: "2,50€"
+              },
+              {
+                name: "Moranguinho (Coconut liqueur, redcurrant and cinnamon)",
+                price: "2,50€"
+              },
+              {
+                name: "Orgasmo (Coconut liqueur, cream and redcurrant)",
+                price: "2,50€"
+              },
+              {
+                name: "Pastel de Nata (Coffee liqueur, egg liqueur and cinnamon)",
+                price: "2,50€"
+              },
+              {
+                name: "Quiet (Black vodka and absinthe)",
+                price: "2,50€"
+              },
+              {
+                name: "Ratatouille (Whisky and Tia Maria)",
+                price: "2,50€"
+              },
+              {
+                name: "TGV (Tequila, Vodka, Gin)",
+                price: "2,50€"
+              },
+              {
+                name: "Toda Lá (Absinthe and cinnamon)",
+                price: "2,50€"
               },
               {
                 name: "Bagaço",
                 price: "1,00€"
               },
               {
-                name: "Bagaço com Mel",
+                name: "Bagaço with Honey",
                 price: "1,20€"
               }
             ]
@@ -1908,20 +2028,80 @@ export const dictionaries = {
             title: "SHOTS",
             items: [
               {
-                name: "Shots Premium (Dragon Ball, B-52, Orgasmo, Jagermaister, TGV, Tequila...)",
+                name: "Beirão",
+                price: "2,00€"
+              },
+              {
+                name: "CRF (Aguardiente)",
+                price: "2,00€"
+              },
+              {
+                name: "Tequila (con limón y sal)",
+                price: "2,00€"
+              },
+              {
+                name: "Vodka",
+                price: "2,00€"
+              },
+              {
+                name: "Whisky",
+                price: "2,00€"
+              },
+              {
+                name: "B-52 (Licor de café, Irish Cream y absenta)",
                 price: "2,50€",
                 isPopular: true
               },
               {
-                name: "Shots (Kalashnikov, CRF, Beirão, Tequila Jameson)",
-                price: "2,00€"
+                name: "Biko (Bailey's y licor de café)",
+                price: "2,50€"
+              },
+              {
+                name: "Bip Bip (Tequila, naranja y canela)",
+                price: "2,50€"
+              },
+              {
+                name: "Dragon Ball (Elaborado)",
+                price: "2,50€"
+              },
+              {
+                name: "Kalashnikov (Vodka, absenta y limón)",
+                price: "2,50€"
+              },
+              {
+                name: "Moranguinho (Batida de coco, grosella y canela)",
+                price: "2,50€"
+              },
+              {
+                name: "Orgasmo (Batida de coco, nata y grosella)",
+                price: "2,50€"
+              },
+              {
+                name: "Pastel de Nata (Licor de café, licor de huevo y canela)",
+                price: "2,50€"
+              },
+              {
+                name: "Quiet (Vodka negro y absenta)",
+                price: "2,50€"
+              },
+              {
+                name: "Ratatouille (Whisky y Tia Maria)",
+                price: "2,50€"
+              },
+              {
+                name: "TGV (Tequila, Vodka, Gin)",
+                price: "2,50€"
+              },
+              {
+                name: "Toda Lá (Absenta y canela)",
+                price: "2,50€"
               },
               {
                 name: "Bagaço",
                 price: "1,00€"
               },
               {
-                name: "Bagaço com Mel",
+                name: "Bagaço con Miel",
                 price: "1,20€"
               }
             ]
