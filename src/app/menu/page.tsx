@@ -44,116 +44,13 @@ export default function MenuPage() {
   const { dict } = useLanguage();
   const [tab, setTab] = useState<"drinks" | "food">("drinks");
 
-  /* ── DRINKS ── */
-  const drinksData: Category[] = [
-    {
-      id: "cervejas",
-      title: dict.menu.categories.beer_bottle,
-      items: [
-        dict.menu.items.mini,
-        dict.menu.items.mini_stout,
-        dict.menu.items.super_bock_33,
-        dict.menu.items.super_bock_especial,
-        dict.menu.items.coruja,
-        dict.menu.items.stella,
-        dict.menu.items.desperados,
-        dict.menu.items.balde,
-      ],
-    },
-    {
-      id: "pressao",
-      title: dict.menu.categories.beer_draft,
-      items: [
-        dict.menu.items.fino,
-        dict.menu.items.principe,
-        dict.menu.items.rei,
-        dict.menu.items.caneca,
-      ],
-    },
-    {
-      id: "shots",
-      title: dict.menu.categories.shots,
-      items: [dict.menu.items.shots_mix, dict.menu.items.bagaço],
-    },
-    {
-      id: "vinhos",
-      title: dict.menu.categories.wines,
-      labels: { price1: dict.menu.labels.copo, price2: dict.menu.labels.garrafa },
-      items: [dict.menu.items.vinho_maduro, dict.menu.items.vinho_verde],
-    },
-    {
-      id: "cocktails",
-      title: dict.menu.categories.cocktails,
-      items: [
-        dict.menu.items.caipirinha,
-        dict.menu.items.mojito,
-        dict.menu.items.gin_tonica,
-      ],
-    },
-  ];
-
-  /* ── FOOD ── */
-  const foodData: Category[] = [
-    {
-      id: "sandes",
-      title: dict.menu.categories.sandwiches,
-      items: [
-        dict.menu.items.bifana,
-        dict.menu.items.sande_mista,
-        dict.menu.items.sande_queijo,
-        dict.menu.items.sande_fiambre,
-        dict.menu.items.sande_fiambre_ovo,
-        dict.menu.items.tosta_mista,
-        dict.menu.items.tosta_mista_77,
-        dict.menu.items.panado_frango,
-        dict.menu.items.panado_porco,
-        dict.menu.items.cachorro,
-        dict.menu.items.prego,
-        dict.menu.items.prego_77,
-      ],
-    },
-    {
-      id: "prato",
-      title: dict.menu.categories.plates,
-      items: [
-        dict.menu.items.francesinha,
-        dict.menu.items.francesinha_esp,
-        dict.menu.items.prego_prato,
-        dict.menu.items.bifanas_prato,
-        dict.menu.items.sopa,
-      ],
-    },
-    {
-      id: "salgados",
-      title: dict.menu.categories.savories,
-      items: [
-        dict.menu.items.coxinha,
-        dict.menu.items.rissol_leitao,
-        dict.menu.items.rissol_vários,
-        dict.menu.items.chamuca,
-        dict.menu.items.bacalhau,
-      ],
-    },
-    {
-      id: "partilhar",
-      title: dict.menu.categories.sharing,
-      items: [
-        dict.menu.items.frango_passarinho,
-        dict.menu.items.moelas,
-        dict.menu.items.batata_queijo_bacon,
-      ],
-    },
-  ];
+  const drinksData = dict.menu.drinks as Category[];
+  const foodData = dict.menu.food as Category[];
 
   const current = tab === "drinks" ? drinksData : foodData;
 
   /* specials shown in the 2×2 grid */
-  const specials = [
-    { badge: "BEST", item: dict.menu.items.mini },
-    { badge: "PACK", item: dict.menu.items.balde },
-    { badge: "TOP",  item: dict.menu.items.francesinha },
-    { badge: "BEST", item: dict.menu.items.shots_mix },
-  ];
+  const specials = dict.menu.specials as { badge: string; item: MenuItem }[];
 
   return (
     <div style={{ background: C.bg, color: C.cream, minHeight: "100vh", fontFamily: "var(--font-lora),'Lora',serif" }}>
